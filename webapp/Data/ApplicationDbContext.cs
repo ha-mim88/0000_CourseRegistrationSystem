@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
+using webapp.Entities;
 
 namespace webapp.Data
 {
@@ -9,5 +10,7 @@ namespace webapp.Data
             : base(options)
         {
         }
+
+        public DbSet<Course> Course { get; set; }
     }
 }
